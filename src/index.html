@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Admin Dashboard</title>
+
+    <!--    Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!--    Google fonts-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--Jquery Code-->
+    <script>
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.navigation').toggleClass('active');
+                $('main').toggleClass('active');
+            })
+
+        });
+    </script>
+</head>
+<body>
+<div class="container relative">
+    <nav class="navigation">
+        <ul>
+            <li class="mb-10 pointer-events-none overflow-x-hidden">
+                <a href="#">
+                    <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                    <span class="title absolute">Brand Name</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></span>
+                    <span class="title">Message</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="title">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
+                    <span class="title">Passwords</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="top-bar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="search">
+                <label>
+                    <input placeholder="Search here..." type="text">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <!--            user image-->
+            <div class="user-avatar">
+                <img alt="" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png">
+            </div>
+        </div>
+
+        <!--        Card container-->
+        <div class="card-box relative w-full p-5 grid grid-cols-4 gap-7">
+            <!--            Card-->
+            <div class="card relative bg-white p-7 rounded-[20px] flex justify-between cursor-pointer shadow-lg hover:bg-blue">
+                <div>
+                    <div class="numbers relative font-semibold text-4xl text-blue">1,504</div>
+                    <div class="cardName text-black2 text-[1.1em] mt-1">Daily Views</div>
+                </div>
+                <div class="icon-box text-5xl text-black2">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <!--            End of card-->
+            <!--            Card-->
+            <div class="card relative bg-white p-7 rounded-[20px] flex justify-between cursor-pointer shadow-lg hover:bg-blue">
+                <div>
+                    <div class="numbers relative font-semibold text-4xl text-blue">$5,604</div>
+                    <div class="cardName text-black2 text-[1.1em] mt-1">Total Earning</div>
+                </div>
+                <div class="icon-box text-5xl text-black2">
+                    <ion-icon name="cash-outline"></ion-icon>
+                </div>
+            </div>
+            <!--            End of card-->
+            <!--            Card-->
+            <div class="card relative bg-white p-7 rounded-[20px] flex justify-between cursor-pointer shadow-lg hover:bg-blue">
+                <div>
+                    <div class="numbers relative font-semibold text-4xl text-blue">1,504</div>
+                    <div class="cardName text-black2 text-[1.1em] mt-1">Daily Views</div>
+                </div>
+                <div class="icon-box text-5xl text-black2">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <!--            End of card-->
+            <!--            Card-->
+            <div class="card relative bg-white p-7 rounded-[20px] flex justify-between cursor-pointer shadow-lg hover:bg-blue">
+                <div>
+                    <div class="numbers relative font-semibold text-4xl text-blue">1,504</div>
+                    <div class="cardName text-black2 text-[1.1em] mt-1">Daily Views</div>
+                </div>
+                <div class="icon-box text-5xl text-black2">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <!--            End of card-->
+
+        </div>
+    </main>
+</div>
+
+<!--Icons-->
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
